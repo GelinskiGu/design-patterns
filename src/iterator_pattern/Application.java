@@ -13,8 +13,8 @@ public class Application {
         spammer.sendSpam(friendsIterator, "Oi, amigo!");
 
         System.out.println("\nIterando amigos próximos de Pedro:");
-        ProfileIterator colleaguesIterator = instagram.createCloseFriendsIterator("1");
-        spammer.sendSpam(colleaguesIterator, "Oi, amigo próximo!");
+        ProfileIterator closeFriendsIterator = instagram.createCloseFriendsIterator("1");
+        spammer.sendSpam(closeFriendsIterator, "Oi, amigo próximo!");
     }
 
     private static Instagram getInstagram() {
