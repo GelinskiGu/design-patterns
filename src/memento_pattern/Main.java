@@ -7,21 +7,21 @@ public class Main {
 
         editor.setText("Primeira versão do texto");
         editor.setCursorPosition("10");
-        command.save(); // Salva o estado atual
+        command.save();
 
         editor.setText("Segunda versão do texto");
         editor.setCursorPosition("20");
-        command.save(); // Salva o estado atual
+        command.save();
 
         editor.setText("Terceira versão do texto");
         System.out.println("Estado atual: " + editor.getText());
 
-        command.undo(); // Restaura para o estado anterior
+        command.undo();
         System.out.println("Estado após desfazer: " + editor.getText());
 
-        command.undo(); // Restaura para o primeiro estado
+        command.undo();
         System.out.println("Estado após desfazer novamente: " + editor.getText());
 
-        command.undo(); // Tenta restaurar além do limite
+        command.undo();
     }
 }
